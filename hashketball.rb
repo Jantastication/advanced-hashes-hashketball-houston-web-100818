@@ -126,12 +126,3 @@ def big_shoe_rebounds
   rebounds
 end
 
-def total_points_scored(team_name)
-    players = player_names(team_name)
-    total_points = 0
-    name = ""
-     players.each do |player|
-        total_points = total_points + num_points_scored(player)
-    end
-    return total_points
-end
